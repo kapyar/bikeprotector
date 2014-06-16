@@ -221,13 +221,11 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About Us
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et commodo neque. <a
-                            href="#">Fusce venenatis</a>, neque Vitae ornare consequat, sapien orci vestibulum augue, eu
-                        posuere dui urna non dolor. Quisque justo ipsum, consectetur nec mi hendrerit, semper ultrices
-                        lectus. <a href="#">Curabitur</a> id dolor eu neque pellentesque faucibus quis vel tellus. <a
-                                href="#">Etiam in ullamcorper</a> ligula. Praesent mattis dui in auctor scelerisque.
-                        Nulla facilisi. Morbi urna orci, aliquam ut nisi ut, imperdiet volutpat felis. Praesent a
-                        porttitor sapien, vel faucibus nisi.</p>
+                    <p class="lead"><a>Protect-Your-Bike</a> is the service that protects your bike with small GPS
+                        chipset embedded into various bicycle accessories and the application providing GPS-monitoring
+                        and notifications. GPS is connected to a global cellular network. The GPS-device attaches to
+                        your bike and the application alerts you if the unusual movement of you bicycle is observed.
+                    </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <img class="img-responsive" src="img/ipad.png" alt="">
@@ -247,13 +245,12 @@
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <h2 class="section-heading">Services
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Donec et</a>
-                        commodo neque. Fusce venenatis, neque vitae ornare consequat, sapien orci vestibulum augue, eu
-                        posuere dui urna non dolor. Quisque justo ipsum, <a href="#">consectetur nec mi</a> hendrerit,
-                        semper ultrices lectus. Curabitur id dolor eu neque pellentesque faucibus quis vel tellus. <a
-                                href="#">Etiam in</a> ullamcorper ligula. <a href="#">Praesent mattis</a> dui in auctor
-                        scelerisque. Nulla facilisi. Morbi urna orci, aliquam ut nisi ut, imperdiet volutpat felis.
-                        Praesent a porttitor sapien, vel faucibus nisi.</p>
+                    <p class="lead">
+                        <a>Portable, practical and clever GPS-device</a><br>
+                        <a>Stationary mode</a><br>
+                        <a>Notifications</a><br>
+                        <a>Tracking</a><br>
+                    </p>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/doge.png" alt="">
