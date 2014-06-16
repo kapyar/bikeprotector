@@ -221,16 +221,13 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About Us
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et commodo neque. <a
-                            href="#">Fusce venenatis</a>, neque Vitae ornare consequat, sapien orci vestibulum augue, eu
-                        posuere dui urna non dolor. Quisque justo ipsum, consectetur nec mi hendrerit, semper ultrices
-                        lectus. <a href="#">Curabitur</a> id dolor eu neque pellentesque faucibus quis vel tellus. <a
-                                href="#">Etiam in ullamcorper</a> ligula. Praesent mattis dui in auctor scelerisque.
-                        Nulla facilisi. Morbi urna orci, aliquam ut nisi ut, imperdiet volutpat felis. Praesent a
-                        porttitor sapien, vel faucibus nisi.</p>
+                    <p class="lead">Ставши жертвою велокрадіїв ми зіктнулися з проблемою, <a href="#">
+                        що поверненню до власника транспорт не підлягає</a>
+                        тому на майбутнє, для підвищення безпеки власників велосипедів,
+                        а конкретно самих велосипедів ми вирішіли створити  <a href="#">продукт.</a> </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/ipad.png" alt="">
+                <img class="img-responsive" src="img/bike2.jpeg" alt="">
             </div>
         </div>
 
@@ -247,16 +244,14 @@
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <h2 class="section-heading">Services
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Donec et</a>
-                        commodo neque. Fusce venenatis, neque vitae ornare consequat, sapien orci vestibulum augue, eu
-                        posuere dui urna non dolor. Quisque justo ipsum, <a href="#">consectetur nec mi</a> hendrerit,
-                        semper ultrices lectus. Curabitur id dolor eu neque pellentesque faucibus quis vel tellus. <a
-                                href="#">Etiam in</a> ullamcorper ligula. <a href="#">Praesent mattis</a> dui in auctor
-                        scelerisque. Nulla facilisi. Morbi urna orci, aliquam ut nisi ut, imperdiet volutpat felis.
-                        Praesent a porttitor sapien, vel faucibus nisi.</p>
+                    <p class="lead">Ви завжди знаєте де ваш велобайк!!!! </br>Проста <a href="/login">реєстрація </a>  на даному сайті.  </br>Установка нашого продукту на ваш вилосипед.
+                        </br> Це два простих кроки що нададуть гарантію безпеки вам так вашому залізному коню. </br>Наш продукт вбудовується у невідємну частину велосипеда,
+                        що значно  підвищує шанси того, що після викрадення наш GPS перадавач залишиться з транспортом. </br> Провірена роками послуга GPS навігації допоможе миттєво
+                        дізнаватися місцезнаходження вашого вело.
+                      </p>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <img class="img-responsive" src="img/doge.png" alt="">
+                <img class="img-responsive" src="img/roga.jpg" alt="">
             </div>
         </div>
 
