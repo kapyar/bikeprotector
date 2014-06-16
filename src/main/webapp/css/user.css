@@ -19,10 +19,11 @@ body {
 #googleMap {
     margin: 0;
     padding: 0;
-    width: 72%;
+    width: 71%;
     height: 100%;
     float: left;
     background-color: #a5360f;
+    z-index: 1031;
 }
 
 #logo {

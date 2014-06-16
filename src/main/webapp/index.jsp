@@ -48,7 +48,7 @@
             <li><a href="#" class="scroll-link" data-id="home">Home</a></li>
             <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
             <li><a href="#" class="scroll-link" data-id="services">Services</a></li>
-            <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
+            <li><a href="#" class="scroll-link" data-id="contact">Infographics</a></li>
             <li><a style="cursor:pointer;" id="loginpopup">Login / Signup</a></li>
             <%
                 if (!("".equals(request.getSession().getAttribute("sessionId")) ||
@@ -269,49 +269,11 @@
 <div class="content-section-a" id="contact">
 
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <h2 class="section-heading">Contact Us</h2>
-
-                <form name="sentMessage" class="well" id="contactForm" novalidate>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="form-control" placeholder="Full Name" id="name" required
-                                   data-validation-required-message="Please enter your name"/>
-
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="email" class="form-control" placeholder="Email" id="email" required
-                                   data-validation-required-message="Please enter your email"/>
-
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message"
-                                      required data-validation-required-message="Please enter your message"
-                                      minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999"
-                                      style="resize:none"></textarea>
-
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary pull-right">Send</button>
-                    <br/><br/>
-                </form>
-            </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <!-- <img class="img-responsive" src="img/map.gif" alt="">  -->
-            </div>
-        </div>
+        <script id="infogram_0_stolen-bikes-per-year" src="//e.infogr.am/js/embed.js" type="text/javascript"></script>
+        <div style="width:100%;border-top:1px solid #acacac;padding-top:3px;font-family:Arial;font-size:10px;text-align:center;">
+            <a target="_blank" href="//infogr.am/stolen-bikes-per-year" style="color:#acacac;text-decoration:none;">Stolen
+                bikes per year</a> | <a style="color:#acacac;text-decoration:none;" href="//infogr.am" target="_blank">Create
+            Infographics</a></div>
 
     </div>
     <!-- /.container -->
@@ -333,10 +295,10 @@
                     <li><a href="#services">Services</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
-                    <li><a href="#contact">Contact</a>
+                    <li><a href="#contact">Infographics</a>
                     </li>
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                <p class="copyright text-muted small">Copyright &copy; Protect Your Bike 2014. All Rights Reserved</p>
             </div>
         </div>
     </div>
