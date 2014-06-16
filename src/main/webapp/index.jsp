@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page Template for Bootstrap</title>
+    <title>Protect you bike</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -37,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Bootstrap Landing</a>
+        <a class="navbar-brand" href="#">Protect Your Bike</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,14 +50,29 @@
             <li><a href="#" class="scroll-link" data-id="services">Services</a></li>
             <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
             <li><a style="cursor:pointer;" id="loginpopup">Login / Signup</a></li>
+            <%
+                if (!("".equals(request.getSession().getAttribute("sessionId")) ||
+                        request.getSession().getAttribute("sessionId") == null)) {%>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome <strong>Guest</strong> <b
-                        class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome
+                    <strong><%=request.getSession().getAttribute("name") %>
+                    </strong> <b
+                            class="caret"></b></a>
                 <ul class="dropdown-menu">
+
+
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Transactions</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Logout</a></li>
+                    <form action="/logout" method="post">
+                        <input type="hidden" name="param1" value="param1Value">
+                        <li><a href="javascript:document.submitForm.submit()">Logout</a></li>
+                    </form>
+                    <%
+                        }
+                    %>
+
+
                 </ul>
             </li>
         </ul>
@@ -79,20 +96,24 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel1">Login to Landing</h4>
             </div>
-            <div class="modal-body" id="login_details">
-                <span> Already have an account? </span> </br></br>
-                *<span style="font-weight:bold;">Your Email</span><br/>
-                <input type="text" placeholder="example@gmail.com" name="login_email"/><br/></br>
-                *<span style="font-weight:bold;">Password</span><br/>
-                <input type="password" placeholder="Password" name="login_password"/><br/>
-            </div>
-            <div class="modal-footer">
-                <input style="float: left" type="button" class="btn btn-success" value="Log In"/>
-                <span class="fp-link"> <a href="#">Forgot Password?</a></span>
-                </br></br>
-                <span> Not a member yet?</span>
-                <span id="signup-link" style="cursor:pointer;" class="text-info">Sign Up!</span>
-            </div>
+            <%--start LOGIN form--%>
+            <form action="/login" method="post">
+                <div class="modal-body" id="login_details">
+                    <span> Already have an account? </span> </br></br>
+                    *<span style="font-weight:bold;">Your Email</span><br/>
+                    <input type="text" placeholder="example@gmail.com" name="login_email"/><br/></br>
+                    *<span style="font-weight:bold;">Password</span><br/>
+                    <input type="password" placeholder="Password" name="login_password"/><br/>
+                </div>
+                <div class="modal-footer">
+                    <input style="float: left" type="submit" class="btn btn-success" value="Log In"/>
+                    <span class="fp-link"> <a href="#">Forgot Password?</a></span>
+                    </br></br>
+                    <span> Not a member yet?</span>
+                    <span id="signup-link" style="cursor:pointer;" class="text-info">Sign Up!</span>
+                </div>
+            </form>
+            <%--end LOIN form--%>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -106,23 +127,32 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel2">Sign Up on Landing</h4>
+                <h4 class="modal-title" id="myModalLabel2">Sign Up to protect your bike</h4>
             </div>
-            <div class="modal-body" id="signup_details">
-                <span>Full Name</span>
-                <input type="text" placeholder="Full Name" name="register_name"/> </br></br>
-                *<span>Email</span>
-                <input type="text" placeholder="example@gmail.com" name="register_email"/></br></br>
-                *<span>Password</span>
-                <input type="password" placeholder="Password" name="register_password"/></br></br>
-                *<span>Password Re-Type</span>
-                <input type="password" placeholder="Re-type Password" name="re_register_password"/>
-            </div>
-            <div class="modal-footer">
-                <input style="float: left" type="button" class="btn btn-success" value="Sign Me Up"/>
-                <span>&nbsp;&nbsp;&nbsp; Already a member? </span><span id="login-link" class="text-info"
-                                                                        style="cursor:pointer;">  Login now  </span>
-            </div>
+            <form action="/registration" method="post">
+                <div class="modal-body" id="signup_details">
+                    <span>Full Name</span>
+                    <input type="text" placeholder="Full Name" name="register_name"/> </br></br>
+                    *<span>Email</span>
+                    <input type="text" placeholder="example@gmail.com" name="register_email"/></br></br>
+
+                    *<span>Password</span>
+                    <input type="password" id="pass" placeholder="Password" name="register_password"/></br></br>
+
+                    <script type="text/javascript" src="js/check_pass.js"></script>
+
+                    *<span>Password Re-Type</span>
+                    <input type="password" onkeyup="checkPass(); return false;" id="re_pass"
+                           placeholder="Re-type Password" name="re_register_password"/>
+
+                </div>
+                <div class="modal-footer">
+                    <input style="float: left" type="submit" class="btn btn-success" value="Sign Me Up"/>
+                    <span>&nbsp;&nbsp;&nbsp; Already a member? </span><span id="login-link" class="text-info"
+                                                                            style="cursor:pointer;">  Login now  </span>
+                </div>
+            </form>
+            <%--end registration form--%>
         </div>
         <!-- /.modal-content -->
     </div>
