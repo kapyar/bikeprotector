@@ -61,8 +61,8 @@
                 <ul class="dropdown-menu">
 
 
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Transactions</a></li>
+                    <li><a href="user.jsp">My Account</a></li>
+
                     <li class="divider"></li>
 
                     <form name="submitForm" method="POST" action="/logout">
