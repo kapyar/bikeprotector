@@ -47,15 +47,17 @@
         </div>
     </a>
 
+    <div id="stolen">Stolen</div>
+    <div id="find">Find</div>
+    <div id="setting">Setting</div>
+    <div id="trips">Trips</div>
     <div class="inside">
         <ul>
-            <a href="#">Find my bike</a>
-            <a href="#">Turn on stolen mode</a>
-            <a href="#">Device setting</a>
-            <a href="#">My trips</a>
+            <a href="#" onclick="moveOffAllFind(); $('#find').slideToggle(500);">Find my bike</a>
+            <a href="#" onclick="moveOffAllStolen(); $('#stolen').slideToggle(500);">Turn on stolen mode</a>
+            <a href="#" onclick="moveOffAllSetting(); $('#setting').slideToggle(500);">Device setting</a>
+            <a href="#" onclick="moveOffAllTrips(); $('#trips').slideToggle(500);">My trips</a>
             <a href="/">Go back to main</a>
-
-
         </ul>
     </div>
 
@@ -63,6 +65,28 @@
 <div id="googleMap">
 
 </div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+
+
+    function moveOffAllFind() {
+        $(" #stolen, #setting, #trips ").slideUp(1);
+    }
+
+    function moveOffAllStolen() {
+        $(" #find, #setting, #trips ").slideUp(1);
+    }
+
+    function moveOffAllSetting() {
+        $(" #find, #stolen, #trips ").slideUp(1);
+    }
+    function moveOffAllTrips() {
+        $(" #find, #stolen, #setting ").slideUp(1);
+    }
+
+</script>
+
 
 </body>
 </html>
