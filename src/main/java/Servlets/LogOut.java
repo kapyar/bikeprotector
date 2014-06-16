@@ -14,6 +14,11 @@ public class LogOut extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("LogOut action START");
+
+        req.getSession().setAttribute("name", "");
+        req.getSession().setAttribute("sessionId", null);
+        req.getRequestDispatcher("index.jsp").forward(req, resp);
+
         System.out.println("LogOut action FINISH");
     }
 }

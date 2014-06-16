@@ -64,10 +64,13 @@
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Transactions</a></li>
                     <li class="divider"></li>
-                    <form action="/logout" method="post">
+
+                    <form name="submitForm" method="POST" action="/logout">
                         <input type="hidden" name="param1" value="param1Value">
-                        <li><a href="#">Logout</a></li>
+                        <a href="javascript:document.submitForm.submit()">Logout</a>
+
                     </form>
+
                     <%
                         }
                     %>
