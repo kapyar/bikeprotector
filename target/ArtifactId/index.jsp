@@ -65,7 +65,7 @@
 
                     <li class="divider"></li>
 
-                    <form name="submitForm" method="POST" action="/logout">
+                        <form name="submitForm" method="POST" action="/logout">
                         <input type="hidden" name="param1" value="param1Value">
                         <a href="javascript:document.submitForm.submit()">Logout</a>
 
@@ -221,13 +221,15 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About Us
-                    <p class="lead">Ставши жертвою велокрадіїв ми зіктнулися з проблемою, <a href="#">
-                        що поверненню до власника транспорт не підлягає</a>
-                        тому на майбутнє, для підвищення безпеки власників велосипедів,
-                        а конкретно самих велосипедів ми вирішіли створити  <a href="#">продукт.</a> </p>
+                    <p class="lead"><a href="#">Protect-Your-Bike</a> is the service that protects your bike with small
+                        GPS
+                        chipset embedded into various bicycle accessories and the application providing GPS-monitoring
+                        and notifications. GPS is connected to a global cellular network. The GPS-device attaches to
+                        your bike and the application alerts you if the unusual movement of you bicycle is observed.
+                    </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/bike2.jpeg" alt="">
+                <img class="img-responsive" src="img/ipad.png" alt="">
             </div>
         </div>
 
@@ -244,14 +246,15 @@
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <h2 class="section-heading">Services
-                    <p class="lead">Ви завжди знаєте де ваш велобайк!!!! </br>Проста <a href="/registration">реєстрація </a>  на даному сайті.  </br>Установка нашого продукту на ваш вилосипед.
-                        Це два простих кроки що нададуть гарантію безпеки вам так вашому залізному коню. </br>Наш продукт вбудовується у невідємну частину велосипеда,
-                        що значно  підвищує шанси того, що після викрадення наш GPS перадавач залишиться з транспортом. </br> Провірена роками послуга GPS навігації допоможе миттєво
-                        дізнаватися місцезнаходження вашого вело.
-                      </p>
+                    <p class="lead">
+                        <a href="#">Portable, practical and clever GPS-device</a><br>
+                        <a href="#">Stationary mode</a><br>
+                        <a href="#">Notifications</a><br>
+                        <a href="#">Tracking</a><br>
+                    </p>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <img class="img-responsive" src="img/roga.jpg" alt="">
+                <img class="img-responsive" src="img/doge.png" alt="">
             </div>
         </div>
 

@@ -10,6 +10,7 @@
 <head>
     <title>Protect Your Bike | Admin</title>
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
 
     <script
@@ -17,12 +18,12 @@
     </script>
 
     <script>
-        var myCenter = new google.maps.LatLng(51.508742, 30.120850);
+        var myCenter = new google.maps.LatLng(50.4650932,30.5205125);
 
         function initialize() {
             var mapProp = {
                 center: myCenter,
-                zoom: 12,
+                zoom: 18,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
@@ -40,7 +41,7 @@
 
 </head>
 <body>
-<div class="left-nav">
+<div class="left-nav-my">
     <a href="/">
         <div id="logo">
             Protect Your Bike
@@ -51,13 +52,30 @@
     <div id="find">Find</div>
     <div id="setting">Setting</div>
     <div id="trips">Trips</div>
-    <div class="inside">
+    <div class="inside-my">
         <ul>
-            <a href="#" onclick="moveOffAllFind(); $('#find').slideToggle(500);">Find my bike</a>
-            <a href="#" onclick="moveOffAllStolen(); $('#stolen').slideToggle(500);">Turn on stolen mode</a>
-            <a href="#" onclick="moveOffAllSetting(); $('#setting').slideToggle(500);">Device setting</a>
-            <a href="#" onclick="moveOffAllTrips(); $('#trips').slideToggle(500);">My trips</a>
-            <a href="/">Go back to main</a>
+            <a href="#" onclick="moveOffAllFind(); $('#find').slideToggle(500);"><span
+                    class="glyphicon glyphicon-search"></span>
+
+                <p>Find my bike</p></a>
+            <a href="#" onclick="moveOffAllStolen(); $('#stolen').slideToggle(500);"><span
+                    class="glyphicon glyphicon-asterisk"></span>
+
+                <p>Turn on stolen mode</p></a>
+
+            <a href="#" onclick="moveOffAllSetting(); $('#setting').slideToggle(500);"><span
+                    class="glyphicon glyphicon-cog"></span>
+
+                <p>Device setting</p></a>
+
+            <a href="#" onclick="moveOffAllTrips(); $('#trips').slideToggle(500);"><span
+                    class="glyphicon glyphicon-road"></span>
+
+                <p>My trips</p></a>
+            <a href="/"><span
+                    class="glyphicon glyphicon-arrow-left"></span>
+
+                <p>Go back to main</p></a>
         </ul>
     </div>
 
