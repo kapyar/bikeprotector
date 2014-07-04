@@ -1,9 +1,7 @@
-bikeprotector
+Bikeprotector
 =============
 
-team project
-
-Service that will protect your bike from thieves, using GPS to find your bike on the Earth))
+> Service that will protect your bike from thieves, using GPS to help find your bike on the Earth))
 
 1. Java EE
 2. Landing Page
